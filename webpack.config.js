@@ -6,7 +6,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 
 module.exports = (env) => {
-  console.log("env: get env value from build:prod script(--env production): ", env);
+  console.log("env: get env value from: ", env);
   const isProduction = env === 'production';
   const CSSExtract = new MiniCssExtractPlugin({ filename: 'styles.css' });
 
